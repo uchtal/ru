@@ -57,3 +57,21 @@ var swiper2 = new Swiper(".gallery-slider .mySwiper2", {
   },
 });
 // End Gallery Slider
+
+// play video on click
+const video_play_btn = document.querySelectorAll(".video-thumbnail");
+video_play_btn.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    this.classList.add("d-none");
+    const videoplayercurrent = this.previousElementSibling;
+    videoplayercurrent.play();
+    videoplayercurrent.controls = true;
+
+    // when video ends remove controls and show video thumbnails
+    videoplayercurrent.addEventListener("ended", function () {
+      videoplayercurrent.controls = false;
+      this.nextElementsSibling.classList.remove("d-none");
+    });
+  });
+});
+// End play video on click
