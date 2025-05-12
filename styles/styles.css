@@ -320,7 +320,7 @@ p {
   line-height: 155%;
 }
 
-.about-content .page-btn, .beauty-content .page-btn {
+.about-content .page-btn, .beauty-content .page-btn, .footer-content {
   margin-top: var(--gap--1--)
 }
 
@@ -660,12 +660,86 @@ h3 {
   margin: auto;
   width: 85px;
   height: 85px;
-  background-image: url(../assets/play.png);
+  background-image: url(../assets/play2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 /* End Meet Section */
+
+/* Footer Section */
+footer {
+  background: url(../assets/honey_spoon.png), url(../assets/fbg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom, top center;
+  background-size: contain, cover;
+  padding: var(--gap--2--) 0;
+  margin-top: var(--gap--2--);
+}
+
+.link img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer {
+  flex-wrap: wrap;
+  gap: var(--gap--2--);
+}
+
+.footer h4 {
+  margin-bottom: 1rem;
+}
+
+footer ul a {
+  text-transform: capitalize;
+  color: var(--cl--2--);
+}
+
+footer ul a:hover {
+  color: var(--cl--4--);
+}
+
+footer ul li+li {
+  margin-top: 0.5rem;
+}
+
+address {
+  font-style: normal;
+}
+
+/* .footer-content {
+  margin-top: var(--gap--1--);
+} */
+
+.media-links {
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: var(--gap--1--);
+}
+
+.media-links a {
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background: var(--cl--1--);
+  width: 50px;
+  height: 50px;
+  padding: 0.25rem 0.75rem;
+}
+
+.media-links a:hover {
+  background: var(--cl--4--);
+}
+
+.copy-right {
+  margin-top: var(--gap--1--);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* End Footer Section */
 
 /* Media */
 @media (min-width: 1440px) {
