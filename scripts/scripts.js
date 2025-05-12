@@ -21,14 +21,14 @@ var swiper = new Swiper(".shop .mySwiper", {
 // End Shop Slider
 
 // GallerySlider
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".gallery-slider .mySwiper", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 1,
-  // autoplay: {
-  //   delay: 3500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -38,15 +38,15 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-var swiper2 = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".gallery-slider .mySwiper2", {
   loop: true,
   spaceBetween: 20,
   slidesPerView: 1,
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 4500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2.01,
